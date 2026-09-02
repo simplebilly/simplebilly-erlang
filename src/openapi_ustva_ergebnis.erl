@@ -1,0 +1,77 @@
+-module(openapi_ustva_ergebnis).
+
+-export([encode/1]).
+
+-export_type([openapi_ustva_ergebnis/0]).
+
+-type openapi_ustva_ergebnis() ::
+    #{ 'bis' := binary(),
+       'hinweis' => binary(),
+       'ist_kleinunternehmer' := boolean(),
+       'kz_41' := binary(),
+       'kz_43' := binary(),
+       'kz_46' := binary(),
+       'kz_47' := binary(),
+       'kz_61' := binary(),
+       'kz_66' := binary(),
+       'kz_67' := binary(),
+       'kz_81' := binary(),
+       'kz_83' := binary(),
+       'kz_84' := binary(),
+       'kz_85' := binary(),
+       'kz_86' := binary(),
+       'kz_88' := binary(),
+       'kz_89' := binary(),
+       'kz_93' := binary(),
+       'von' := binary(),
+       'zahllast' := binary(),
+       'zeitraum' := binary(),
+       'zeitraum_typ' := binary()
+     }.
+
+encode(#{ 'bis' := Bis,
+          'hinweis' := Hinweis,
+          'ist_kleinunternehmer' := IstKleinunternehmer,
+          'kz_41' := Kz41,
+          'kz_43' := Kz43,
+          'kz_46' := Kz46,
+          'kz_47' := Kz47,
+          'kz_61' := Kz61,
+          'kz_66' := Kz66,
+          'kz_67' := Kz67,
+          'kz_81' := Kz81,
+          'kz_83' := Kz83,
+          'kz_84' := Kz84,
+          'kz_85' := Kz85,
+          'kz_86' := Kz86,
+          'kz_88' := Kz88,
+          'kz_89' := Kz89,
+          'kz_93' := Kz93,
+          'von' := Von,
+          'zahllast' := Zahllast,
+          'zeitraum' := Zeitraum,
+          'zeitraum_typ' := ZeitraumTyp
+        }) ->
+    #{ 'bis' => Bis,
+       'hinweis' => Hinweis,
+       'ist_kleinunternehmer' => IstKleinunternehmer,
+       'kz_41' => Kz41,
+       'kz_43' => Kz43,
+       'kz_46' => Kz46,
+       'kz_47' => Kz47,
+       'kz_61' => Kz61,
+       'kz_66' => Kz66,
+       'kz_67' => Kz67,
+       'kz_81' => Kz81,
+       'kz_83' => Kz83,
+       'kz_84' => Kz84,
+       'kz_85' => Kz85,
+       'kz_86' => Kz86,
+       'kz_88' => Kz88,
+       'kz_89' => Kz89,
+       'kz_93' => Kz93,
+       'von' => Von,
+       'zahllast' => Zahllast,
+       'zeitraum' => Zeitraum,
+       'zeitraum_typ' => ZeitraumTyp
+     }.

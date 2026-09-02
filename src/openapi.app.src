@@ -1,0 +1,18 @@
+{application, openapi,
+ [{description, "Simplebilly API - Bookkeeping, CRM, ERP. Multi-tenant API: a tenant is isolated and routed by subdomain (or a configured custom domain) under the base domain.  ## Rate limiting All endpoints are rate-limited per client IP: **100 requests per minute** on API routes and **5 requests per minute** on authentication routes. Exceeding a limit returns &#x60;429 Too Many Requests&#x60;; the window resets after 60 seconds."},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications,
+    [kernel,
+     stdlib,
+     ssl,
+     hackney,
+     ctx
+    ]},
+  {env, [{host, "demo.simplebilly.com"}]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, ["Apache-2.0"]},
+  {links, ["https://simplebilly.com/en/legal/imprint"]}
+]}.
